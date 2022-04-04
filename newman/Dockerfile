@@ -44,7 +44,8 @@ WORKDIR /scanner
 RUN useradd -ms /bin/bash ${user}                                                                              && \
   ##chown -R ${user}:${user} ${PROGRAM_DESTINATION_DIR}/${PROGRAM_NAME}                                         && \
   ##mkdir /report                                                                                              && \
-  ##chown -R ${user}:${user} /report                                                                           && \
+  ##chown -R ${user}:${user} /report
+  yum install -y git                                                                           && \
   yum --nogpgcheck --disableplugin=subscription-manager clean all
 
 ### Insert container entrypoint script

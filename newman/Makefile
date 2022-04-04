@@ -2,7 +2,7 @@ OWNER    = boozallen
 #REPO     = sdp-images
 REPO     = toolkit
 IMAGE    = newman
-VERSION  = 5.0.0
+VERSION  = 5.0.1
 
 ##REGISTRY = docker.pkg.github.com/$(REPO)
 REGISTRY = registry.uip.sh/$(REPO)

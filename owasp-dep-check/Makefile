@@ -3,7 +3,8 @@ REPO     = sdp-images
 IMAGE    = owasp-dep-check
 VERSION  = 6.2.2
 
-REGISTRY = docker.pkg.github.com/$(OWNER)/$(REPO)
+#REGISTRY = docker.pkg.github.com/$(OWNER)/$(REPO)
+REGISTRY = registry.uip.sh/toolkit
 TAG      = $(REGISTRY)/$(IMAGE):$(VERSION)
 
 .PHONY: help Makefile
